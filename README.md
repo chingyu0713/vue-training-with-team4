@@ -15,24 +15,26 @@
    `vue-test-學號`
    - 例如：學號04 ➔ `vue-test-04`
 4. 每個人**只編輯自己的檔案**，**不要修改到其他人的檔案**。
-5. 完成作業後，**Push 到自己的分支**，並開 Pull Request (PR)。
+5. **不會的可以看 solutions 資料夾解答**
+6. 完成作業後，**Push 到自己的分支**，並開 Pull Request (PR)。
 
 ---
 
 ## 【Git 使用步驟】
 
 
-1.打開terminal
-2.用git clone https://github.com/chingyu0713/vue-training-with-team4.git 把目前的程式碼下載到本地端
-3.切換到倉庫名稱cd test-vue-team4
-4.創建新分支git checkout -b <你分支被指定的名稱>
+1. 打開terminal
+2. 用git clone https://github.com/chingyu0713/vue-training-with-team4.git 把目前的程式碼下載到本地端
+3. 切換到倉庫名稱cd vue-training-with-team4
+
+4. 創建新分支git checkout -b <你分支被指定的名稱>
  分支命名格式：  
    `vue-test-學號`
    - 例如：學號04 ➔ `vue-test-04`
 
-5.完成後 用git add .把所有檔案加入本地git
-6.再用git commit -m "你新增了什麼"把東西都commit確認
-7.git push -u origin <你分支被指定的名稱>推上git
+5. 完成後 用git add .把所有檔案加入本地git
+6. 再用git commit -m "你新增了什麼"把東西都commit確認
+7. git push -u origin <你分支被指定的名稱>推上git
 
 01 — 練習題目：資料綁定 (v-model)
 練習內容說明：
