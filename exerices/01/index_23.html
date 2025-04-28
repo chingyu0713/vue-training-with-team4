@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01-practice-by-23</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>請輸入文字 :</h1>
+      <input type="text" v-model="msg" />
+      <button type="button" style="margin-left: 10px;" @click="clearContent">清除</button>
+      <p>你輸入的是: {{ msg }}</p>
+    </div>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            msg: null,
+          };
+        },
+        methods: {
+          clearContent() {
+            this.msg = "";
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

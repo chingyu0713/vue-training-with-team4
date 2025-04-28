@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02-practice-by-23</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <!-- 如果字隱藏 按鈕是黃色;顯示時是藍色 字體加粗 -->
+      <button type="button" @click="toggle":style="{
+        padding: '5px 10px',
+        backgroundColor: isVisibility? '#FFB703':'#219EBC',
+        fontWeight:  isVisibility? 'bolder':''}">顯示/隱藏</button>
+      <p v-show="isVisibility">我出現囉!</p>
+    </div>
+    <script>
+      Vue.createApp({
+        data(){
+            return{
+                isVisibility: false,
+            }
+        },
+        methods:{
+            toggle(){
+                this.isVisibility = !this.isVisibility;
+            }
+        }
+      }).mount("#app");
+    </script>
+  </body>
+</html>
