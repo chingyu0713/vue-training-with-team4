@@ -45,7 +45,7 @@
 
 額外挑戰：新增「清除」按鈕，清空輸入欄位。
 
-畫面範例：`assets/01.png`
+畫面範例：[image](https://github.com/chingyu0713/vue-training-with-team4/blob/main/assets/01.png)
 
 
 02 — 練習題目：條件渲染 (v-if / v-show)
@@ -55,5 +55,6 @@
 
 額外挑戰：按鈕文字根據狀態變化（顯示/隱藏）。
 
-畫面範例：`assets/02.png`
+畫面範例：[image](https://github.com/chingyu0713/vue-training-with-team4/blob/main/assets/02.png)
+
 
