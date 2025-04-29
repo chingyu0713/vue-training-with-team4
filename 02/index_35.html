@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="toggleVisibility">點擊切換顯示</button>
+        <p v-show="isVisibility">
+            這是原本不顯示的字
+        </p>
+
+        <script>
+            const { createApp } = Vue
+            createApp({
+                data(){
+                    return{
+                        isVisibility :false
+                    }
+                },
+                methods: {
+                    toggleVisibility(){
+                        this.isVisibility = !this.isVisibility
+                    }
+                }
+            }).mount('#app')
+        </script>
+    </div>
+</body>
+</html>

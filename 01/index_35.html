@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h2>請輸入文字:</h2>
+    <div id="app">
+        <input type="text" v-model="message">
+        <button>清除</button>
+        <p>你輸入的是:{{ message }}</p>
+    </div>
+    
+    <script>
+        const { createApp } = Vue
+        createApp({
+            data() {
+                return {
+                    message:""
+                }
+            },
+        methods:{
+            clearMessage() {
+                this.message=""
+            }
+        }
+        }).mount('#app')
+    </script>
+</body>
+</html>
