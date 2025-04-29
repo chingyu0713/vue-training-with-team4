@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <section id="app">
+      <h2>請輸入文字 :</h2>
+      <input v-model="text" type="text" name="text" id="text" />
+      <button @click="clear">清除</button>
+      <p>你輸入的是 : {{ text }}</p>
+    </section>
+    <script>
+      Vue.createApp({
+        data() {
+          return {
+            text: "",
+          };
+        },
+        methods: {
+          clear() {
+            this.text = "";
+          },
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>
