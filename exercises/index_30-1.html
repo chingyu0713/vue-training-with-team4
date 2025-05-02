@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>誰能救我切版 我切板好爛</h1>
+				<input type="text" v-model="input" placeholder="說點什麼...">
+				<button @click="clearInput">刪除</button>
+				<p>{{ input }}</p>
+    </div>
+    
+		<script>
+			const app = Vue.createApp({
+				data() {
+					return{
+						input: ""
+					}
+				},
+				methods:{
+					clearInput(){
+						this.input = ""
+					}
+				}
+			})
+			app.mount('#app')
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button @click="toggleMessage">{{isVisible ? '顯示':'隱藏'}}</button>
+        <p  v-show="isVisible">教我切版阿阿阿阿阿阿!!!!!!!!!!!!!!!!</p>
+    </div>
+
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return{
+                    isVisible : true
+                }
+            },
+            methods:{
+                toggleMessage(){
+                    this.isVisible = !this.isVisible;
+                }  
+            }
+        })
+        app.mount("#app")
+    </script>
+</body>
+</html>
