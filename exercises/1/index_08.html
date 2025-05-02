@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>資料綁定 (v-model)</title>
+</head>
+<body>
+    <div class="app">
+        <p>請輸入文字:</p>
+        <input v-model="message.name" type="text">
+        <p>你輸入的是:{{ message.name }}</p>
+    </div>
+
+
+    <script>
+    Vue.createApp({
+        data(){
+            return{
+                message:{
+                    name:'',
+                }
+            }
+        }
+    }).mount(".app")
+
+    </script>
+</body>
+</html>
